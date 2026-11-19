@@ -8,4 +8,6 @@
              category="Choir"/>
   <SOUNDFONT path="C:\Users\Everton\Desktop\SF2 DE 2005\Strings Legato Korg Triton.SF2"
              category="Strings"/>
+  <SOUNDFONT path="C:\Users\Everton\Desktop\SF2 DE 2005\choirMaleFem.sf2"
+             category="Choir"/>
 </SOUNDMODULE_CATEGORIES>
