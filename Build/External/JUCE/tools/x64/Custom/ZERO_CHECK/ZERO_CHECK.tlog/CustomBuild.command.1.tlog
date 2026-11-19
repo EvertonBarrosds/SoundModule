@@ -1,0 +1,10 @@
+^C:\SOUNDMODULE\BUILD\EXTERNAL\JUCE\TOOLS\CMAKEFILES\7865239603A3E6781A99DE5A7A92604D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SoundModule/External/JUCE -BC:/SoundModule/Build/External/JUCE/tools --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/SoundModule/Build/External/JUCE/tools/JUCE.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,25 @@
+# ninja log v7
+22	227	8167660755356878	C:/SoundModule/out/build/x64-debug/External/JUCE/tools/CMakeFiles/cmake.verify_globs	22696c870fe7e70a
+287	2836	8167660757994491	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_Sheenbidi.c.obj	b5dd12b6dfb4bacb
+315	3795	8167660758280871	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_2.c.obj	b4804f383aa652ff
+3796	5789	8167660793077773	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_avx2.c.obj	eb27b7276cbbfae1
+361	6810	8167660758745479	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dec.c.obj	47e4e32b080c4acd
+5790	8418	8167660813035552	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_dec_sse41.c.obj	f7a4bbdbbee43fbf
+8419	11240	8167660839323173	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_avx2.c.obj	e7f49018828a134b
+11241	13632	8167660867542543	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_enc_sse41.c.obj	b55ca450b4ef0fb1
+6970	13653	8167660824829021	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_enc.c.obj	4c6e5ea53a93be47
+2840	14077	8167660783521777	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_dsp_dec.c.obj	49a6a706895b3629
+14078	15998	8167660895899854	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_utils.c.obj	5a5bb62b9a510a2a
+329	16145	8167660758420647	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_3.c.obj	f0cda51aab547cd2
+13655	16272	8167660891677523	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_sharpyuv.c.obj	416ba91606c0970f
+347	16625	8167660758598857	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libpng.c.obj	96c32dbecbf8ae95
+300	16649	8167660758119869	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libjpg_1.c.obj	15666cef81e88735
+16626	17588	8167660921377460	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_CompilationTime.cpp.obj	7a79f916059ffea9
+235	24221	8167660757466652	extras/Build/juceaide/CMakeFiles/juceaide.dir/Main.cpp.obj	ca7e8ef238170fba
+246	24451	8167660757599452	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/juce_build_tools/juce_build_tools.cpp.obj	487a6be4890f44b2
+16650	25192	8167660921624391	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core_zlib.c.obj	da9d241b4d1d2117
+13632	25617	8167660891458951	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_libwebp_enc.c.obj	5c50f59167f21aa7
+15999	28514	8167660915115869	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics_lunasvg.c.obj	a3815706db4a1150
+16146	32417	8167660916574033	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_events/juce_events.cpp.obj	6fcb966f22615b8b
+16273	49601	8167660917856379	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_core/juce_core.cpp.obj	5f9cc9b7452e933c
+260	97119	8167660757728943	extras/Build/juceaide/CMakeFiles/juceaide.dir/__/__/__/modules/juce_graphics/juce_graphics.cpp.obj	1c91658f6b2a45ac

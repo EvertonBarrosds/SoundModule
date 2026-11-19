@@ -1,0 +1,1242 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineSystem.cmake:220 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Windows - 10.0.26300 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:541 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:583 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Vers├úo do MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+      Compila├º├úo de 18/11/2026 23:34:51 iniciada.
+      
+      Projeto "C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" no n├│ 1 (destinos padr├úo).
+      PrepareForBuild:
+        Criando o diret├│rio "Debug\\".
+        A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+        Criando o diret├│rio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Criando "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+        Tocando "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Excluindo o arquivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Tocando "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Projeto de compila├º├úo pronto "C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos padr├úo).
+      
+      Compila├º├úo com ├¬xito.
+          0 Aviso(s)
+          0 Erro(s)
+      
+      Tempo Decorrido 00:00:05.08
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/SoundModule/Build/CMakeFiles/4.5.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:105 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link.com"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/mt.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/mt.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/mt"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/mt.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/mt.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/mt"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/mt.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/mt.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/mt"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/mt.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/mt.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/Microsoft VS Code/bin/mt.com"
+      - "C:/Program Files/Microsoft VS Code/bin/mt.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/mt"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/mt.com"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/mt.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/Everton/AppData/Roaming/npm/mt.com"
+      - "C:/Users/Everton/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/Everton/AppData/Roaming/npm/mt"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/mt.com"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/mt.exe"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:596 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:569 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/SoundModule/bin/"
+      - "C:/Program Files/SoundModule/sbin/"
+      - "C:/Program Files/SoundModule/"
+    searched_directories:
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/rc.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/rc.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/rc"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/rc.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/rc.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/rc"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/rc.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/rc.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/rc"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/rc.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/rc.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/Microsoft VS Code/bin/rc.com"
+      - "C:/Program Files/Microsoft VS Code/bin/rc.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/rc"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/rc.com"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/rc.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/Everton/AppData/Roaming/npm/rc.com"
+      - "C:/Users/Everton/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/Everton/AppData/Roaming/npm/rc"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/rc.com"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/rc.exe"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files/SoundModule/bin/rc.com"
+      - "C:/Program Files/SoundModule/bin/rc.exe"
+      - "C:/Program Files/SoundModule/bin/rc"
+      - "C:/Program Files/SoundModule/sbin/rc.com"
+      - "C:/Program Files/SoundModule/sbin/rc.exe"
+      - "C:/Program Files/SoundModule/sbin/rc"
+      - "C:/Program Files/SoundModule/rc.com"
+      - "C:/Program Files/SoundModule/rc.exe"
+      - "C:/Program Files/SoundModule/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/SoundModule"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/SoundModule"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he"
+      binary: "C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b52f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Vers├úo do MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+        Compila├º├úo de 18/11/2026 23:34:57 iniciada.
+        
+        Projeto "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\cmTC_b52f9.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\Debug\\".
+          Criando o diret├│rio "cmTC_b52f9.dir\\Debug\\cmTC_b52f9.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_b52f9.dir\\Debug\\cmTC_b52f9.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_b52f9.dir\\Debug\\cmTC_b52f9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_b52f9.dir\\Debug\\\\" /Fd"cmTC_b52f9.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.52.37029 for x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_b52f9.dir\\Debug\\\\" /Fd"cmTC_b52f9.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\Debug\\cmTC_b52f9.exe" /INCREMENTAL /ILK:"cmTC_b52f9.dir\\Debug\\cmTC_b52f9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he/Debug/cmTC_b52f9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he/Debug/cmTC_b52f9.lib" /MACHINE:X64  /machine:x64 cmTC_b52f9.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b52f9.vcxproj -> C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\Debug\\cmTC_b52f9.exe
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_b52f9.dir\\Debug\\cmTC_b52f9.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_b52f9.dir\\Debug\\cmTC_b52f9.tlog\\cmTC_b52f9.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\cmTC_b52f9.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:00.78
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)(\\.exe)?"?( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fv44he\\Debug\\cmTC_b52f9.exe" /INCREMENTAL /ILK:"cmTC_b52f9.dir\\Debug\\cmTC_b52f9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he/Debug/cmTC_b52f9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-fv44he/Debug/cmTC_b52f9.lib" /MACHINE:X64  /machine:x64 cmTC_b52f9.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.52.37029.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:541 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:583 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/SoundModule"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/SoundModule"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Vers├úo do MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+      Compila├º├úo de 18/11/2026 23:34:58 iniciada.
+      
+      Projeto "C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdC\\CompilerIdC.vcxproj" no n├│ 1 (destinos padr├úo).
+      PrepareForBuild:
+        Criando o diret├│rio "Debug\\".
+        A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+        Criando o diret├│rio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Criando "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+        Tocando "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Excluindo o arquivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Tocando "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Projeto de compila├º├úo pronto "C:\\SoundModule\\Build\\CMakeFiles\\4.5.0\\CompilerIdC\\CompilerIdC.vcxproj" (destinos padr├úo).
+      
+      Compila├º├úo com ├¬xito.
+          0 Aviso(s)
+          0 Erro(s)
+      
+      Tempo Decorrido 00:00:01.00
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/SoundModule/Build/CMakeFiles/4.5.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:105 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Everton/AppData/Roaming/npm/"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/SoundModule/bin/"
+      - "C:/Program Files/SoundModule/sbin/"
+      - "C:/Program Files/SoundModule/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin/lld-link"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/lld-link"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link.com"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link.exe"
+      - "C:/Program Files (x86)/Embarcadero/Studio/37.0/bin64/lld-link"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link.com"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link.exe"
+      - "C:/Users/Public/Documents/Embarcadero/Studio/37.0/Bpl/Win64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/lld-link"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link.com"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/copilot-shim/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Everton/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Everton/AppData/Roaming/npm/lld-link"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/Everton/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Program Files/bin/lld-link.com"
+      - "C:/Program Files/bin/lld-link.exe"
+      - "C:/Program Files/bin/lld-link"
+      - "C:/Program Files/sbin/lld-link.com"
+      - "C:/Program Files/sbin/lld-link.exe"
+      - "C:/Program Files/sbin/lld-link"
+      - "C:/Program Files/lld-link.com"
+      - "C:/Program Files/lld-link.exe"
+      - "C:/Program Files/lld-link"
+      - "C:/Program Files (x86)/bin/lld-link.com"
+      - "C:/Program Files (x86)/bin/lld-link.exe"
+      - "C:/Program Files (x86)/bin/lld-link"
+      - "C:/Program Files (x86)/sbin/lld-link.com"
+      - "C:/Program Files (x86)/sbin/lld-link.exe"
+      - "C:/Program Files (x86)/sbin/lld-link"
+      - "C:/Program Files (x86)/lld-link.com"
+      - "C:/Program Files (x86)/lld-link.exe"
+      - "C:/Program Files (x86)/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/CMake/sbin/lld-link.com"
+      - "C:/Program Files/CMake/sbin/lld-link.exe"
+      - "C:/Program Files/CMake/sbin/lld-link"
+      - "C:/Program Files/CMake/lld-link.com"
+      - "C:/Program Files/CMake/lld-link.exe"
+      - "C:/Program Files/CMake/lld-link"
+      - "C:/Program Files/SoundModule/bin/lld-link.com"
+      - "C:/Program Files/SoundModule/bin/lld-link.exe"
+      - "C:/Program Files/SoundModule/bin/lld-link"
+      - "C:/Program Files/SoundModule/sbin/lld-link.com"
+      - "C:/Program Files/SoundModule/sbin/lld-link.exe"
+      - "C:/Program Files/SoundModule/sbin/lld-link"
+      - "C:/Program Files/SoundModule/lld-link.com"
+      - "C:/Program Files/SoundModule/lld-link.exe"
+      - "C:/Program Files/SoundModule/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl"
+        - "C:\\Program Files (x86)\\Embarcadero\\Studio\\37.0\\bin64"
+        - "C:\\Users\\Public\\Documents\\Embarcadero\\Studio\\37.0\\Bpl\\Win64"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin\\copilot-shim"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Everton\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Everton\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Everton\\AppData\\Local\\GitHubDesktop\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/SoundModule"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/SoundModule"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy"
+      binary: "C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e7b10.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Vers├úo do MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+        Compila├º├úo de 18/11/2026 23:34:59 iniciada.
+        
+        Projeto "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\cmTC_e7b10.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\Debug\\".
+          Criando o diret├│rio "cmTC_e7b10.dir\\Debug\\cmTC_e7b10.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_e7b10.dir\\Debug\\cmTC_e7b10.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_e7b10.dir\\Debug\\cmTC_e7b10.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e7b10.dir\\Debug\\\\" /Fd"cmTC_e7b10.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.52.37029 for x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_e7b10.dir\\Debug\\\\" /Fd"cmTC_e7b10.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\Debug\\cmTC_e7b10.exe" /INCREMENTAL /ILK:"cmTC_e7b10.dir\\Debug\\cmTC_e7b10.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy/Debug/cmTC_e7b10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy/Debug/cmTC_e7b10.lib" /MACHINE:X64  /machine:x64 cmTC_e7b10.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e7b10.vcxproj -> C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\Debug\\cmTC_e7b10.exe
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_e7b10.dir\\Debug\\cmTC_e7b10.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_e7b10.dir\\Debug\\cmTC_e7b10.tlog\\cmTC_e7b10.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\cmTC_e7b10.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:00.70
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)(\\.exe)?"?( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\SoundModule\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i03vgy\\Debug\\cmTC_e7b10.exe" /INCREMENTAL /ILK:"cmTC_e7b10.dir\\Debug\\cmTC_e7b10.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy/Debug/cmTC_e7b10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/SoundModule/Build/CMakeFiles/CMakeScratch/TryCompile-i03vgy/Debug/cmTC_e7b10.lib" /MACHINE:X64  /machine:x64 cmTC_e7b10.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "External/JUCE/CMakeLists.txt:37 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.52.37029.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "External/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake:59 (try_compile)"
+      - "External/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake:71 (_juce_find_target_architecture)"
+      - "External/JUCE/CMakeLists.txt:57 (include)"
+    directories:
+      source: "C:/SoundModule/Build/External/JUCE/CMakeFiles/CMakeTmp"
+      binary: "C:/SoundModule/Build/External/JUCE/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/SoundModule/Build/External/JUCE/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c666f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Vers├úo do MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+        Compila├º├úo de 18/11/2026 23:37:08 iniciada.
+        
+        Projeto "C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\cmTC_c666f.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\Debug\\".
+          Criando o diret├│rio "cmTC_c666f.dir\\Debug\\cmTC_c666f.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_c666f.dir\\Debug\\cmTC_c666f.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_c666f.dir\\Debug\\cmTC_c666f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_c666f.dir\\Debug\\\\" /Fd"cmTC_c666f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue C:\\SoundModule\\External\\JUCE\\extras\\Build\\CMake\\juce_runtime_arch_detection.cpp
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.52.37029 for x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_c666f.dir\\Debug\\\\" /Fd"cmTC_c666f.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue C:\\SoundModule\\External\\JUCE\\extras\\Build\\CMake\\juce_runtime_arch_detection.cpp
+          juce_runtime_arch_detection.cpp
+        C:\\SoundModule\\External\\JUCE\\extras\\Build\\CMake\\juce_runtime_arch_detection.cpp(56,3): error C1189: #error:  JUCE_ARCH x86_64 [C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\cmTC_c666f.vcxproj]
+        Projeto de compila├º├úo pronto "C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\cmTC_c666f.vcxproj" (destinos padr├úo) -- FALHA.
+        
+        FALHA da compila├º├úo.
+        
+        "C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\cmTC_c666f.vcxproj" (destino padr├úo) (1) ->
+        (ClCompile destino) -> 
+          C:\\SoundModule\\External\\JUCE\\extras\\Build\\CMake\\juce_runtime_arch_detection.cpp(56,3): error C1189: #error:  JUCE_ARCH x86_64 [C:\\SoundModule\\Build\\External\\JUCE\\CMakeFiles\\CMakeTmp\\cmTC_c666f.vcxproj]
+        
+            0 Aviso(s)
+            1 Erro(s)
+        
+        Tempo Decorrido 00:00:00.49
+        
+      exitCode: 1
+...

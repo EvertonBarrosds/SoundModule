@@ -1,0 +1,99 @@
+# This file will be configured to contain variables for CPack. These variables
+# should be set in the CMake list file of the project before CPack module is
+# included. The list of available CPACK_xxx variables and their associated
+# documentation may be obtained using
+#  cpack --help-variable-list
+#
+# Some variables are common to all generators (e.g. CPACK_PACKAGE_NAME)
+# and some are specific to a generator
+# (e.g. CPACK_NSIS_EXTRA_INSTALL_COMMANDS). The generator specific variables
+# usually begin with CPACK_<GENNAME>_xxxx.
+
+
+set(CPACK_ARCHIVE_GID "-1")
+set(CPACK_ARCHIVE_UID "-1")
+set(CPACK_BINARY_7Z "OFF")
+set(CPACK_BINARY_IFW "OFF")
+set(CPACK_BINARY_INNOSETUP "OFF")
+set(CPACK_BINARY_NSIS "ON")
+set(CPACK_BINARY_NUGET "OFF")
+set(CPACK_BINARY_WIX "OFF")
+set(CPACK_BINARY_ZIP "OFF")
+set(CPACK_BUILD_SOURCE_DIRS "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean;C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg")
+set(CPACK_CMAKE_GENERATOR "Ninja")
+set(CPACK_COMPONENTS_ALL "fluidsynth_development;fluidsynth_program;fluidsynth_runtime")
+set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
+set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "C:/Program Files/CMake/share/cmake-4.5/Templates/CPack.GenericDescription.txt")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY "FluidSynth built using CMake")
+set(CPACK_DMG_SLA_USE_RESOURCE_FILE_LICENSE "ON")
+set(CPACK_GENERATOR "NSIS")
+set(CPACK_INNOSETUP_ARCHITECTURE "x64")
+set(CPACK_INSTALL_CMAKE_PROJECTS "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg;FluidSynth;ALL;/")
+set(CPACK_INSTALL_PREFIX "C:/SoundModule/vcpkg_installed/vcpkg/pkgs/fluidsynth_x64-windows/debug")
+set(CPACK_MODULE_PATH "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean/cmake_admin")
+set(CPACK_NSIS_DISPLAY_NAME "fluidsynth 2.6.2")
+set(CPACK_NSIS_INSTALLER_ICON_CODE "")
+set(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
+set(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES64")
+set(CPACK_NSIS_PACKAGE_NAME "fluidsynth 2.6.2")
+set(CPACK_NSIS_UNINSTALL_NAME "Uninstall")
+set(CPACK_OUTPUT_CONFIG_FILE "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg/CPackConfig.cmake")
+set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
+set(CPACK_PACKAGE_DESCRIPTION_FILE "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean/README.md")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "FluidSynth real-time synthesizer")
+set(CPACK_PACKAGE_EXECUTABLES "fluidsynth;FluidSynth CLI")
+set(CPACK_PACKAGE_FILE_NAME "fluidsynth-2.6.2-win64")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "fluidsynth 2.6.2")
+set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "fluidsynth 2.6.2")
+set(CPACK_PACKAGE_NAME "fluidsynth")
+set(CPACK_PACKAGE_RELOCATABLE "true")
+set(CPACK_PACKAGE_VENDOR "fluidsynth.org")
+set(CPACK_PACKAGE_VERSION "2.6.2")
+set(CPACK_PACKAGE_VERSION_MAJOR "2")
+set(CPACK_PACKAGE_VERSION_MINOR "6")
+set(CPACK_PACKAGE_VERSION_PATCH "2")
+set(CPACK_RESOURCE_FILE_LICENSE "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean/LICENSE")
+set(CPACK_RESOURCE_FILE_README "C:/Program Files/CMake/share/cmake-4.5/Templates/CPack.GenericDescription.txt")
+set(CPACK_RESOURCE_FILE_WELCOME "C:/Program Files/CMake/share/cmake-4.5/Templates/CPack.GenericWelcome.txt")
+set(CPACK_SET_DESTDIR "OFF")
+set(CPACK_SOURCE_7Z "ON")
+set(CPACK_SOURCE_GENERATOR "7Z;ZIP")
+set(CPACK_SOURCE_IGNORE_FILES "/.git/;/build/;~$;.cproject;.project;/.settings/;")
+set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg/CPackSourceConfig.cmake")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "fluidsynth-2.6.2")
+set(CPACK_SOURCE_STRIP_FILES "OFF")
+set(CPACK_SOURCE_ZIP "ON")
+set(CPACK_STRIP_FILES "ON")
+set(CPACK_SYSTEM_NAME "win64")
+set(CPACK_THREADS "1")
+set(CPACK_TOPLEVEL_TAG "win64")
+set(CPACK_WIX_SIZEOF_VOID_P "8")
+
+if(NOT CPACK_PROPERTIES_FILE)
+  set(CPACK_PROPERTIES_FILE "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg/CPackProperties.cmake")
+endif()
+
+if(EXISTS ${CPACK_PROPERTIES_FILE})
+  include(${CPACK_PROPERTIES_FILE})
+endif()
+
+# Configuration for component "fluidsynth_runtime"
+
+SET(CPACK_COMPONENTS_ALL fluidsynth_development fluidsynth_program fluidsynth_runtime)
+set(CPACK_COMPONENT_FLUIDSYNTH_RUNTIME_DISPLAY_NAME "Runtime Library")
+set(CPACK_COMPONENT_FLUIDSYNTH_RUNTIME_DESCRIPTION "Shared library (DLL) needed to run FluidSynth programs")
+
+# Configuration for component "fluidsynth_program"
+
+SET(CPACK_COMPONENTS_ALL fluidsynth_development fluidsynth_program fluidsynth_runtime)
+set(CPACK_COMPONENT_FLUIDSYNTH_PROGRAM_DISPLAY_NAME "FluidSynth Application")
+set(CPACK_COMPONENT_FLUIDSYNTH_PROGRAM_DESCRIPTION "FluidSynth Command Line Interface Program")
+set(CPACK_COMPONENT_FLUIDSYNTH_PROGRAM_DEPENDS fluidsynth_runtime)
+
+# Configuration for component "fluidsynth_development"
+
+SET(CPACK_COMPONENTS_ALL fluidsynth_development fluidsynth_program fluidsynth_runtime)
+set(CPACK_COMPONENT_FLUIDSYNTH_DEVELOPMENT_DISPLAY_NAME "C Headers and import library")
+set(CPACK_COMPONENT_FLUIDSYNTH_DEVELOPMENT_DESCRIPTION "C headers and import library for using FluidSynth")
+set(CPACK_COMPONENT_FLUIDSYNTH_DEVELOPMENT_DEPENDS fluidsynth_runtime)

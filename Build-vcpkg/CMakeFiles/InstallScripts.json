@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/SoundModule/Build-vcpkg/cmake_install.cmake",
+		"C:/SoundModule/Build-vcpkg/External/JUCE/cmake_install.cmake",
+		"C:/SoundModule/Build-vcpkg/External/JUCE/modules/cmake_install.cmake",
+		"C:/SoundModule/Build-vcpkg/External/JUCE/extras/Build/cmake_install.cmake",
+		"C:/SoundModule/Build-vcpkg/External/JUCE/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

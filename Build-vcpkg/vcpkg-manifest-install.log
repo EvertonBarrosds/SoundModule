@@ -1,0 +1,19 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/cl.exe
+The following packages are already installed:
+    fluidsynth:x64-windows@2.6.2
+  * gcem:x64-windows@1.18.0
+  * vcpkg-cmake:x64-windows@2026-11-09
+  * vcpkg-cmake-config:x64-windows@2026-07-21
+fluidsynth provides CMake targets:
+
+  find_package(FluidSynth CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE FluidSynth::libfluidsynth)
+  add_custom_command(OUTPUT result COMMAND FluidSynth::fluidsynth ARGS ...)
+
+fluidsynth provides pkg-config modules:
+
+  # Software SoundFont synth
+  fluidsynth
+
+All requested installations completed successfully in: 245 us

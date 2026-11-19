@@ -1,0 +1,20 @@
+^C:\SOUNDMODULE\BUILD-VCPKG\CMAKEFILES\A12D981B18191E2DF0E84B3217AF3ACC\JUCEHEADER.H.RULE
+setlocal
+External\JUCE\tools\extras\Build\juceaide\juceaide_artefacts\Custom\juceaide.exe header C:/SoundModule/Build-vcpkg/SoundModule_artefacts/JuceLibraryCode/Release/Defs.txt C:/SoundModule/Build-vcpkg/SoundModule_artefacts/JuceLibraryCode/JuceHeader.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\SOUNDMODULE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SoundModule -BC:/SoundModule/Build-vcpkg --check-stamp-file C:/SoundModule/Build-vcpkg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,486 @@
+[1/2] "C:/Program Files/CMake/bin/cmake.exe" -E chdir ".." "C:/Program Files/CMake/bin/cmake.exe" "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Release" "-DCMAKE_INSTALL_PREFIX=C:/SoundModule/vcpkg_installed/vcpkg/pkgs/fluidsynth_x64-windows" "-DFETCHCONTENT_FULLY_DISCONNECTED=ON" "-Denable-libsndfile=OFF" "-Denable-pulseaudio=OFF" "-Denable-pipewire=OFF" "-Denable-dsound:BOOL=ON" "-Denable-wasapi:BOOL=ON" "-Denable-waveout:BOOL=ON" "-Denable-winmidi:BOOL=ON" "-DHAVE_MMSYSTEM_H:BOOL=ON" "-DHAVE_DSOUND_H:BOOL=ON" "-DHAVE_OBJBASE_H:BOOL=ON" "-Denable-coreaudio:BOOL=OFF" "-Denable-coremidi:BOOL=OFF" "-DCOREAUDIO_FOUND:BOOL=OFF" "-DCOREMIDI_FOUND:BOOL=OFF" "-Denable-alsa:BOOL=OFF" "-DALSA_FOUND:BOOL=OFF" "-Denable-opensles:BOOL=OFF" "-DOpenSLES_FOUND:BOOL=OFF" "-Denable-coverage:BOOL=OFF" "-Denable-dbus:BOOL=OFF" "-Denable-floats:BOOL=OFF" "-Denable-fpe-check:BOOL=OFF" "-Denable-framework:BOOL=OFF" "-Denable-jack:BOOL=OFF" "-Denable-ladspa:BOOL=OFF" "-Denable-midishare:BOOL=OFF" "-Denable-oboe:BOOL=OFF" "-Denable-openmp:BOOL=OFF" "-Denable-oss:BOOL=OFF" "-Denable-portaudio:BOOL=OFF" "-Denable-profiling:BOOL=OFF" "-Denable-readline:BOOL=OFF" "-Denable-sdl3:BOOL=OFF" "-Denable-signalsmith:BOOL=OFF" "-Denable-systemd:BOOL=OFF" "-Denable-trap-on-fpe:BOOL=OFF" "-Denable-ubsan:BOOL=OFF" "-Dosal=cpp11" "-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=ON" "-DCMAKE_MAKE_PROGRAM=C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_SET_CHARSET_FLAG=ON" "-DVCPKG_PLATFORM_TOOLSET=v145" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DVCPKG_LINKER_FLAGS_RELEASE=" "-DVCPKG_LINKER_FLAGS_DEBUG=" "-DVCPKG_TARGET_ARCHITECTURE=x64" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-D_VCPKG_ROOT_DIR=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg" "-D_VCPKG_INSTALLED_DIR=C:/SoundModule/vcpkg_installed" "-DVCPKG_MANIFEST_INSTALL=OFF"
+-- The C compiler identification is MSVC 19.52.37029.0
+-- The CXX compiler identification is MSVC 19.52.37029.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking whether system has ANSI C header files
+-- Looking for 8 include files dlfcn.h, ..., float.h
+-- Looking for 8 include files dlfcn.h, ..., float.h - not found
+-- ANSI C header files - not found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - not found
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h - not found.
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - not found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - not found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - not found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - not found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - not found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - not found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test _have_inline
+-- Performing Test _have_inline - Success
+-- Performing Test _have_vla
+-- Performing Test _have_vla - Failed
+-- Targeting Windows Version 0x0A00
+-- Looking for windows.h
+-- Looking for windows.h - found
+-- Looking for io.h
+-- Looking for io.h - found
+-- Looking for include files mmdeviceapi.h, audioclient.h
+-- Looking for include files mmdeviceapi.h, audioclient.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Performing Test HAVE_CXX_THREAD_PRIMITIVES
+-- Performing Test HAVE_CXX_THREAD_PRIMITIVES - Success
+-- Performing Test HAVE_CXX_FILESYSTEM
+-- Performing Test HAVE_CXX_FILESYSTEM - Success
+-- Found OpenMP_C: -openmp (found version "2.0")
+-- Found OpenMP: TRUE (found version "2.0") found components: C
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- 
+Audio / MIDI driver support:
+  ALSA:                  no
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                yes
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   no
+  PipeWire:              no
+  PortAudio:             no
+  PulseAudio:            no
+  SDL3:                  no
+  WASAPI:                yes
+  WaveOut:               yes
+  WinMidi:               yes
+
+Support for SF3 files:   no (libsndfile not found)
+Support for DLS files:   yes
+
+Audio to file rendering: yes
+  libsndfile:            no (RAW PCM rendering only)
+
+Miscellaneous support:
+  Limiter:               no (signalsmith-audio/basics not found)
+  D-Bus:                 no
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              no
+  systemd:               no
+  getopt:                no
+
+Windows specific info:
+  target version:        0x0A00
+  unicode support:       yes
+
+Developer nerds info:
+  OS abstraction:        cpp11
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            no
+  Profiling:             no
+  Debug Build:           no
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+-- 
+**************************************************************
+Build Summary:
+FluidSynth Version:    2.6.2
+Library version:       3.6.2
+Git revision:          not a git working copy
+Build type:            Release
+Install Prefix:        C:/SoundModule/vcpkg_installed/vcpkg/pkgs/fluidsynth_x64-windows
+
+Audio / MIDI driver support:
+  ALSA:                  no
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                yes
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   no
+  PipeWire:              no
+  PortAudio:             no
+  PulseAudio:            no
+  SDL3:                  no
+  WASAPI:                yes
+  WaveOut:               yes
+  WinMidi:               yes
+
+Support for SF3 files:   no (libsndfile not found)
+Support for DLS files:   yes
+
+Audio to file rendering: yes
+  libsndfile:            no (RAW PCM rendering only)
+
+Miscellaneous support:
+  Limiter:               no (signalsmith-audio/basics not found)
+  D-Bus:                 no
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              no
+  systemd:               no
+  getopt:                no
+
+Windows specific info:
+  target version:        0x0A00
+  unicode support:       yes
+
+Developer nerds info:
+  OS abstraction:        cpp11
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            no
+  Profiling:             no
+  Debug Build:           no
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+**************************************************************
+
+
+-- Configuring done (25.6s)
+-- Generating done (2.6s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    ALSA_FOUND
+    COREAUDIO_FOUND
+    COREMIDI_FOUND
+    FETCHCONTENT_FULLY_DISCONNECTED
+    OpenSLES_FOUND
+    _VCPKG_ROOT_DIR
+    enable-coreaudio
+    enable-coremidi
+    enable-coverage
+    enable-framework
+    enable-ubsan
+
+
+-- Build files have been written to: C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel
+[2/2] "C:/Program Files/CMake/bin/cmake.exe" -E chdir "../../x64-windows-dbg" "C:/Program Files/CMake/bin/cmake.exe" "C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/src/v2.6.2-3edec6f02d.clean" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Debug" "-DCMAKE_INSTALL_PREFIX=C:/SoundModule/vcpkg_installed/vcpkg/pkgs/fluidsynth_x64-windows/debug" "-DFETCHCONTENT_FULLY_DISCONNECTED=ON" "-Denable-libsndfile=OFF" "-Denable-pulseaudio=OFF" "-Denable-pipewire=OFF" "-Denable-dsound:BOOL=ON" "-Denable-wasapi:BOOL=ON" "-Denable-waveout:BOOL=ON" "-Denable-winmidi:BOOL=ON" "-DHAVE_MMSYSTEM_H:BOOL=ON" "-DHAVE_DSOUND_H:BOOL=ON" "-DHAVE_OBJBASE_H:BOOL=ON" "-Denable-coreaudio:BOOL=OFF" "-Denable-coremidi:BOOL=OFF" "-DCOREAUDIO_FOUND:BOOL=OFF" "-DCOREMIDI_FOUND:BOOL=OFF" "-Denable-alsa:BOOL=OFF" "-DALSA_FOUND:BOOL=OFF" "-Denable-opensles:BOOL=OFF" "-DOpenSLES_FOUND:BOOL=OFF" "-Denable-coverage:BOOL=OFF" "-Denable-dbus:BOOL=OFF" "-Denable-floats:BOOL=OFF" "-Denable-fpe-check:BOOL=OFF" "-Denable-framework:BOOL=OFF" "-Denable-jack:BOOL=OFF" "-Denable-ladspa:BOOL=OFF" "-Denable-midishare:BOOL=OFF" "-Denable-oboe:BOOL=OFF" "-Denable-openmp:BOOL=OFF" "-Denable-oss:BOOL=OFF" "-Denable-portaudio:BOOL=OFF" "-Denable-profiling:BOOL=OFF" "-Denable-readline:BOOL=OFF" "-Denable-sdl3:BOOL=OFF" "-Denable-signalsmith:BOOL=OFF" "-Denable-systemd:BOOL=OFF" "-Denable-trap-on-fpe:BOOL=OFF" "-Denable-ubsan:BOOL=OFF" "-Dosal=cpp11" "-DCMAKE_DISABLE_FIND_PACKAGE_Doxygen=ON" "-DCMAKE_MAKE_PROGRAM=C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_SET_CHARSET_FLAG=ON" "-DVCPKG_PLATFORM_TOOLSET=v145" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DVCPKG_LINKER_FLAGS_RELEASE=" "-DVCPKG_LINKER_FLAGS_DEBUG=" "-DVCPKG_TARGET_ARCHITECTURE=x64" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-D_VCPKG_ROOT_DIR=C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg" "-D_VCPKG_INSTALLED_DIR=C:/SoundModule/vcpkg_installed" "-DVCPKG_MANIFEST_INSTALL=OFF"
+-- The C compiler identification is MSVC 19.52.37029.0
+-- The CXX compiler identification is MSVC 19.52.37029.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking whether system has ANSI C header files
+-- Looking for 8 include files dlfcn.h, ..., float.h
+-- Looking for 8 include files dlfcn.h, ..., float.h - not found
+-- ANSI C header files - not found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - not found
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h - not found.
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - not found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - not found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - not found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - not found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - not found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - not found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test _have_inline
+-- Performing Test _have_inline - Success
+-- Performing Test _have_vla
+-- Performing Test _have_vla - Failed
+-- Targeting Windows Version 0x0A00
+-- Looking for windows.h
+-- Looking for windows.h - found
+-- Looking for io.h
+-- Looking for io.h - found
+-- Looking for include files mmdeviceapi.h, audioclient.h
+-- Looking for include files mmdeviceapi.h, audioclient.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Performing Test HAVE_CXX_THREAD_PRIMITIVES
+-- Performing Test HAVE_CXX_THREAD_PRIMITIVES - Success
+-- Performing Test HAVE_CXX_FILESYSTEM
+-- Performing Test HAVE_CXX_FILESYSTEM - Success
+-- Found OpenMP_C: -openmp (found version "2.0")
+-- Found OpenMP: TRUE (found version "2.0") found components: C
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- 
+Audio / MIDI driver support:
+  ALSA:                  no
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                yes
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   no
+  PipeWire:              no
+  PortAudio:             no
+  PulseAudio:            no
+  SDL3:                  no
+  WASAPI:                yes
+  WaveOut:               yes
+  WinMidi:               yes
+
+Support for SF3 files:   no (libsndfile not found)
+Support for DLS files:   yes
+
+Audio to file rendering: yes
+  libsndfile:            no (RAW PCM rendering only)
+
+Miscellaneous support:
+  Limiter:               no (signalsmith-audio/basics not found)
+  D-Bus:                 no
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              no
+  systemd:               no
+  getopt:                no
+
+Windows specific info:
+  target version:        0x0A00
+  unicode support:       yes
+
+Developer nerds info:
+  OS abstraction:        cpp11
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            no
+  Profiling:             no
+  Debug Build:           yes
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+-- 
+**************************************************************
+Build Summary:
+FluidSynth Version:    2.6.2
+Library version:       3.6.2
+Git revision:          not a git working copy
+Build type:            Debug
+Install Prefix:        C:/SoundModule/vcpkg_installed/vcpkg/pkgs/fluidsynth_x64-windows/debug
+
+Audio / MIDI driver support:
+  ALSA:                  no
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                yes
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   no
+  PipeWire:              no
+  PortAudio:             no
+  PulseAudio:            no
+  SDL3:                  no
+  WASAPI:                yes
+  WaveOut:               yes
+  WinMidi:               yes
+
+Support for SF3 files:   no (libsndfile not found)
+Support for DLS files:   yes
+
+Audio to file rendering: yes
+  libsndfile:            no (RAW PCM rendering only)
+
+Miscellaneous support:
+  Limiter:               no (signalsmith-audio/basics not found)
+  D-Bus:                 no
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              no
+  systemd:               no
+  getopt:                no
+
+Windows specific info:
+  target version:        0x0A00
+  unicode support:       yes
+
+Developer nerds info:
+  OS abstraction:        cpp11
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            no
+  Profiling:             no
+  Debug Build:           yes
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+**************************************************************
+
+
+-- Configuring done (25.6s)
+-- Generating done (2.6s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    ALSA_FOUND
+    COREAUDIO_FOUND
+    COREMIDI_FOUND
+    FETCHCONTENT_FULLY_DISCONNECTED
+    OpenSLES_FOUND
+    _VCPKG_ROOT_DIR
+    enable-coreaudio
+    enable-coremidi
+    enable-coverage
+    enable-framework
+    enable-ubsan
+
+
+-- Build files have been written to: C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-dbg

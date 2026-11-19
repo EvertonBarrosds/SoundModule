@@ -1,0 +1,7 @@
+Package: gcem
+Version: 1.18.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 35ad7451bcac3a5a449ff67d0bba24496bdc32544598a43d38c0e0a6d9f7818e
+Description: A C++ compile-time math library using generalized constant expressions

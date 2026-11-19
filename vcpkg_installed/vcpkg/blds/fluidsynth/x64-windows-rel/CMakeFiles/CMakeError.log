@@ -1,0 +1,20 @@
+Determining if the DIR symbol is defined as in AC_HEADER_DIRENT failed with the following output:
+Change Dir: 'C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ed62d
+[1/2] "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.52.37025\bin\Hostx64\x64\cl.exe"  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\cmTC_ed62d.dir\CheckDIRSymbolExists.c.obj /FdCMakeFiles\cmTC_ed62d.dir\ /FS -c C:\SoundModule\vcpkg_installed\vcpkg\blds\fluidsynth\x64-windows-rel\CMakeFiles\CMakeTmp\CheckDIRSymbolExists.c
+FAILED: [code=2] CMakeFiles/cmTC_ed62d.dir/CheckDIRSymbolExists.c.obj 
+"C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.52.37025\bin\Hostx64\x64\cl.exe"  /nologo -D_MBCS  /nologo /DWIN32 /D_WINDOWS /utf-8 /MP   /MDd /Z7 /Ob0 /Od /RTC1  -MDd /showIncludes /FoCMakeFiles\cmTC_ed62d.dir\CheckDIRSymbolExists.c.obj /FdCMakeFiles\cmTC_ed62d.dir\ /FS -c C:\SoundModule\vcpkg_installed\vcpkg\blds\fluidsynth\x64-windows-rel\CMakeFiles\CMakeTmp\CheckDIRSymbolExists.c
+C:\SoundModule\vcpkg_installed\vcpkg\blds\fluidsynth\x64-windows-rel\CMakeFiles\CMakeTmp\CheckDIRSymbolExists.c(4): fatal error C1083: Não é possível abrir arquivo incluir: 'dirent.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+File C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/CMakeFiles/CMakeTmp/CheckDIRSymbolExists.c:
+/* */
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <dirent.h>
+
+int main()
+{if ((DIR *) 0) return 0;}
+

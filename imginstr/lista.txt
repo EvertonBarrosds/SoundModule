@@ -1,0 +1,14 @@
+ O volume na unidade C ‚ form
+ O N£mero de S‚rie do Volume ‚ 0457-801B
+
+ Pasta de C:\SoundModule\imginstr
+
+[.]                      [..]                     bass.webp
+Bell.avif                brass.jpg                Choir.jpg
+Drums & Percussion.jpg   eletricPiano.jpg         fx.webp
+guitar.jpg               lista.txt                Mallet.jpg
+organ.jpg                piano.webp               Plucked.jpg
+strings.jpg              synth.jpg                Woodwinds.webp
+World.jpg                
+              17 arquivo(s)        888.997 bytes
+               2 pasta(s)   58.607.398.912 bytes dispon¡veis

@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.5/Modules/BasicConfigVersion-SamePatchVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.5/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.5/Modules/WriteBasicConfigVersionFile.cmake
+C:/SoundModule/Build-vcpkg/CMakeFiles/cmake.verify_globs
+C:/SoundModule/External/JUCE/CMakeLists.txt
+C:/SoundModule/External/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake
+C:/SoundModule/External/JUCE/extras/Build/CMake/JUCEConfig.cmake.in
+C:/SoundModule/External/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake
+C:/SoundModule/External/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake
+C:/SoundModule/External/JUCE/extras/Build/CMake/JUCEUtils.cmake

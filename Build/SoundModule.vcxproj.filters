@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\SoundModule\Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_extra\juce_gui_extra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_basics\juce_gui_basics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_basics\juce_gui_basics_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_basics\juce_gui_basics_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_basics\juce_gui_basics_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_gui_basics\juce_gui_basics_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_Harfbuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_Sheenbidi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libjpg_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libjpg_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libjpg_3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libpng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_dec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_dec_avx2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_dec_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_enc_avx2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_dsp_enc_sse41.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_sharpyuv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_libwebp_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_graphics\juce_graphics_lunasvg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_events\juce_events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_core\juce_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_core\juce_core_CompilationTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_core\juce_core_zlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\SoundModule\External\JUCE\modules\juce_data_structures\juce_data_structures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\SoundModule\Build\SoundModule_artefacts\JuceLibraryCode\JuceHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SoundModule\Build\CMakeFiles\0286ff1d7b2903689cb1563c5c3937e9\JuceHeader.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\SoundModule\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\SoundModule\Build\SoundModule_rc_lib.dir\$(Configuration)\SoundModule_resources.res">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9AB0B358-DF14-3F9F-B72E-2C5D0DD92572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{18747425-1826-30C9-B3BB-673F015B1027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{9FA75967-18C8-3578-83D6-059D632DD7C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9BBA5EA-0A16-3A7B-ADAE-196B6D1BD5B3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

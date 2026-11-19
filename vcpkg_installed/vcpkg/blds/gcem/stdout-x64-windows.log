@@ -1,0 +1,9 @@
+Downloading https://github.com/kthohr/gcem/archive/v1.18.0.tar.gz -> kthohr-gcem-v1.18.0.tar.gz
+Successfully downloaded kthohr-gcem-v1.18.0.tar.gz
+-- Extracting source C:/Users/Everton/AppData/Local/vcpkg/downloads/kthohr-gcem-v1.18.0.tar.gz
+-- Using source at C:/SoundModule/vcpkg_installed/vcpkg/blds/gcem/src/v1.18.0-0a1243030d.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/SoundModule/vcpkg_installed/vcpkg/pkgs/gcem_x64-windows/share/gcem/copyright
+-- Performing post-build validation

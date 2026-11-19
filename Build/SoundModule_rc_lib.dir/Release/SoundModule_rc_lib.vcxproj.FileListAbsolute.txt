@@ -1,0 +1,1 @@
+C:\SoundModule\Build\SoundModule_rc_lib.dir\Release\SoundModule_rc_lib.lib

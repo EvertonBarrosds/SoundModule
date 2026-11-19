@@ -1,0 +1,2 @@
+C:/SoundModule/Build-vcpkg/vcpkg_installed/vcpkg/blds/detect_compiler/x64-windows-rel/CMakeFiles/edit_cache.dir
+C:/SoundModule/Build-vcpkg/vcpkg_installed/vcpkg/blds/detect_compiler/x64-windows-rel/CMakeFiles/rebuild_cache.dir

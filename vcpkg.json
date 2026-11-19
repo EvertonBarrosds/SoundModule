@@ -1,0 +1,8 @@
+{
+  "name": "soundmodule",
+  "version-string": "1.0.0",
+  "builtin-baseline": "1b7ff93feb4d3f080a7b3ec099f099aaf63e3873",
+  "dependencies": [
+    "fluidsynth"
+  ]
+}

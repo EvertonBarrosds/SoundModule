@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/SoundModule/Build-vcpkg/CMakeFiles/cmake.verify_globs
+C:/SoundModule/Build-vcpkg/External/JUCE/tools/JUCEToolsExport.cmake
+C:/SoundModule/External/JUCE/extras/Build/juceaide/CMakeLists.txt

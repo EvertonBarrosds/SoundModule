@@ -1,0 +1,7 @@
+Package: fluidsynth
+Version: 2.6.2
+Depends: gcem, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9e77a78b3a42d5526823152c2ddc3b4ce2325b3af35e7f028c8587e60e48994d
+Description: FluidSynth reads and handles MIDI events from the MIDI input device. It is the software analogue of a MIDI synthesizer. FluidSynth can also play midifiles using a Soundfont.

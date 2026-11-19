@@ -1,0 +1,10 @@
+C:/SoundModule/Build-vcpkg/CMakeFiles/SoundModule.dir
+C:/SoundModule/Build-vcpkg/CMakeFiles/SoundModule_rc_lib.dir
+C:/SoundModule/Build-vcpkg/CMakeFiles/INSTALL.dir
+C:/SoundModule/Build-vcpkg/CMakeFiles/ALL_BUILD.dir
+C:/SoundModule/Build-vcpkg/CMakeFiles/ZERO_CHECK.dir
+C:/SoundModule/Build-vcpkg/External/JUCE/CMakeFiles/INSTALL.dir
+C:/SoundModule/Build-vcpkg/External/JUCE/CMakeFiles/ALL_BUILD.dir
+C:/SoundModule/Build-vcpkg/External/JUCE/modules/CMakeFiles/INSTALL.dir
+C:/SoundModule/Build-vcpkg/External/JUCE/extras/Build/CMakeFiles/INSTALL.dir
+C:/SoundModule/Build-vcpkg/External/JUCE/extras/Build/juceaide/CMakeFiles/INSTALL.dir

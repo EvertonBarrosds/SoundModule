@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/cmake_install.cmake",
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/src/cmake_install.cmake",
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/test/cmake_install.cmake",
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/doc/cmake_install.cmake",
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/fluidsynth/x64-windows-rel/doc/examples/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/SoundModule/vcpkg_installed/vcpkg/blds/gcem/x64-windows-rel/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
