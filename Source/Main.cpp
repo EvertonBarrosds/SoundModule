@@ -1,3 +1,4 @@
+
 #include <JuceHeader.h>
 #include "FluidSynthEngine.h"
 
@@ -6,6 +7,9 @@
 #include <atomic>
 #include <functional>
 #include <vector>
+#include <JuceHeader.h>
+
+#include "ArduinoSerialMidiInput.h"
 
 // =============================================================
 // BOTÃO DE PRESET
@@ -150,34 +154,88 @@ public:
         refreshSoundFontLibrary();
 
         // =====================================================
-        // ENTRADA MIDI
+        // ENTRADA MIDI E ARDUINO SERIAL
         // =====================================================
 
         addAndMakeVisible(midiInputSelector);
 
         midiDevices = juce::MidiInput::getAvailableDevices();
+        serialPorts = ArduinoSerialMidiInput::getAvailablePorts();
+
+        // Adiciona dispositivos MIDI convencionais
 
         for (int i = 0; i < midiDevices.size(); ++i)
-            midiInputSelector.addItem(midiDevices[i].name, i + 1);
-
-        if (midiDevices.isEmpty())
         {
             midiInputSelector.addItem(
-                "Nenhum MIDI encontrado", 1);
+                "MIDI - " + midiDevices[i].name,
+                i + 1
+            );
+        }
+
+        // Adiciona portas COM do Arduino
+
+        for (int i = 0; i < serialPorts.size(); ++i)
+        {
+            midiInputSelector.addItem(
+                "Arduino - " + serialPorts[i],
+                1001 + i
+            );
+        }
+
+        // Verifica se existe alguma entrada disponível
+
+        if (midiDevices.isEmpty() && serialPorts.isEmpty())
+        {
+            midiInputSelector.addItem(
+                "Nenhuma entrada encontrada",
+                1
+            );
 
             midiInputSelector.setEnabled(false);
-
             midiStatusText = "MIDI: NO DEVICE";
         }
         else
         {
-            midiInputSelector.setSelectedId(
-                1, juce::dontSendNotification);
+            midiInputSelector.setEnabled(true);
 
             midiInputSelector.onChange = [this]()
             {
-                openMidiInput(midiInputSelector.getSelectedId());
+                const int selectedId =
+                    midiInputSelector.getSelectedId();
+
+                if (selectedId >= 1001)
+                {
+                    const int portIndex = selectedId - 1001;
+
+                    if (portIndex >= 0 &&
+                        portIndex < serialPorts.size())
+                    {
+                        openArduinoSerial(serialPorts[portIndex]);
+                    }
+                }
+                else
+                {
+                    openMidiInput(selectedId);
+                }
             };
+
+            // Prioriza MIDI convencional.
+            // Se não houver, seleciona o Arduino.
+
+            if (!midiDevices.isEmpty())
+            {
+                midiInputSelector.setSelectedId(
+                    1,
+                    juce::dontSendNotification
+                );
+            }
+            else
+            {
+                midiInputSelector.setSelectedId(
+                    1001,
+                    juce::dontSendNotification
+                );
+            }
         }
 
         // =====================================================
@@ -330,6 +388,7 @@ public:
                     masterVolumeSlider.getValue() / 100.0);
 
             masterVolume.store(volume);
+            repaint();
         };
 
         // =====================================================
@@ -378,8 +437,18 @@ public:
         if (soundFontSelector.getSelectedId() > 0)
             loadSelectedSoundFont();
 
+        // Abre automaticamente a entrada disponível.
+        // MIDI convencional tem prioridade.
+        // Se não houver MIDI, abre a primeira porta COM.
+
         if (!midiDevices.isEmpty())
+        {
             openMidiInput(1);
+        }
+        else if (!serialPorts.isEmpty())
+        {
+            openArduinoSerial(serialPorts[0]);
+        }
     }
 
 
@@ -393,13 +462,17 @@ public:
             midiInput.reset();
         }
 
+        // Encerra a thread serial antes de destruir o componente.
+
+        arduinoSerial.close();
+
         shutdownAudio();
     }
 
 
-    // =========================================================
+    // =============================================================
     // ARQUIVO DE PRESETS
-    // =========================================================
+    // =============================================================
 
     juce::File getPresetFile() const
     {
@@ -509,9 +582,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // SALVAR PRESET
-    // =========================================================
+    // =============================================================
 
     void savePreset(int index)
     {
@@ -611,9 +684,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // CARREGAR PRESET
-    // =========================================================
+    // =============================================================
 
     void loadPreset(int index)
     {
@@ -805,9 +878,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // CATEGORIAS DE INSTRUMENTOS
-    // =========================================================
+    // =============================================================
 
     juce::StringArray getInstrumentCategories() const
     {
@@ -906,9 +979,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // IMAGEM DA CATEGORIA DO INSTRUMENTO
-    // =========================================================
+    // =============================================================
 
     juce::String getCategoryImageFileName(const juce::String& category) const
     {
@@ -930,6 +1003,7 @@ public:
         // Bass e World ainda não possuem imagem na pasta.
         return {};
     }
+
 
     void updateCurrentInstrumentDisplay(const juce::File& soundFontFile)
     {
@@ -967,9 +1041,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // BIBLIOTECA DE SOUNDFONTS
-    // =========================================================
+    // =============================================================
 
     void refreshSoundFontLibrary()
     {
@@ -1326,12 +1400,16 @@ public:
     }
 
 
-    // =========================================================
-    // MIDI
-    // =========================================================
+    // =============================================================
+    // MIDI CONVENCIONAL
+    // =============================================================
 
     void openMidiInput(int selectedId)
     {
+        // Fecha a conexão serial antes de abrir MIDI convencional.
+
+        arduinoSerial.close();
+
         if (midiInput != nullptr)
         {
             midiInput->stop();
@@ -1361,6 +1439,108 @@ public:
     }
 
 
+    // =============================================================
+    // ABRIR ENTRADA SERIAL DO ARDUINO
+    // =============================================================
+
+    void openArduinoSerial(const juce::String& port)
+    {
+        // Fecha a entrada MIDI convencional.
+
+        if (midiInput != nullptr)
+        {
+            midiInput->stop();
+            midiInput.reset();
+        }
+
+        // Fecha qualquer conexão serial anterior.
+
+        arduinoSerial.close();
+
+        const bool opened = arduinoSerial.open(
+            port,
+            [this](uint8_t status, uint8_t data1, uint8_t data2)
+            {
+                handleArduinoMidiMessage(status, data1, data2);
+            }
+        );
+
+        if (opened)
+            midiStatusText = "ARDUINO: CONNECTED (" + port + ")";
+        else
+            midiStatusText = "ARDUINO: ERROR (" + port + ")";
+
+        repaint();
+    }
+
+
+    // =============================================================
+    // PROCESSAR MIDI RECEBIDO PELA SERIAL
+    // =============================================================
+
+    void handleArduinoMidiMessage(
+        uint8_t status,
+        uint8_t data1,
+        uint8_t data2)
+    {
+        const int type = status & 0xF0;
+        const int channel = status & 0x0F;
+
+        // NOTE ON
+
+        if (type == 0x90 && data2 > 0)
+        {
+            const juce::ScopedLock lock(engineLock);
+
+            engine.noteOn(channel, data1, data2);
+        }
+
+        // NOTE OFF
+        // Também trata NOTE ON com velocity zero como NOTE OFF.
+
+        else if (type == 0x80 || (type == 0x90 && data2 == 0))
+        {
+            const juce::ScopedLock lock(engineLock);
+
+            engine.noteOff(channel, data1);
+        }
+
+        // CONTROL CHANGE 1 = MODULATION
+
+        else if (type == 0xB0 && data1 == 1)
+        {
+            {
+                const juce::ScopedLock lock(engineLock);
+
+                engine.setModulation(data2);
+            }
+
+            // Atualiza o slider na thread gráfica.
+
+            juce::Component::SafePointer<MainComponent> safeThis(this);
+
+            juce::MessageManager::callAsync(
+                [safeThis, value = static_cast<int>(data2)]()
+                {
+                    if (safeThis == nullptr)
+                        return;
+
+                    safeThis->currentModulation = value;
+
+                    safeThis->modulationSlider.setValue(
+                        value,
+                        juce::dontSendNotification);
+                });
+        }
+
+        // Os demais CCs são ignorados por enquanto.
+    }
+
+
+    // =============================================================
+    // RECEBER MIDI CONVENCIONAL
+    // =============================================================
+
     void handleIncomingMidiMessage(
         juce::MidiInput* source,
         const juce::MidiMessage& message) override
@@ -1387,12 +1567,17 @@ public:
             engine.setPitchBend(
                 message.getPitchWheelValue());
 
-            juce::MessageManager::callAsync(
-                [this, value = message.getPitchWheelValue()]()
-                {
-                    currentPitchBend = value;
+            juce::Component::SafePointer<MainComponent> safeThis(this);
 
-                    pitchBendSlider.setValue(
+            juce::MessageManager::callAsync(
+                [safeThis, value = message.getPitchWheelValue()]()
+                {
+                    if (safeThis == nullptr)
+                        return;
+
+                    safeThis->currentPitchBend = value;
+
+                    safeThis->pitchBendSlider.setValue(
                         value,
                         juce::dontSendNotification);
                 });
@@ -1403,12 +1588,17 @@ public:
             engine.setModulation(
                 message.getControllerValue());
 
-            juce::MessageManager::callAsync(
-                [this, value = message.getControllerValue()]()
-                {
-                    currentModulation = value;
+            juce::Component::SafePointer<MainComponent> safeThis(this);
 
-                    modulationSlider.setValue(
+            juce::MessageManager::callAsync(
+                [safeThis, value = message.getControllerValue()]()
+                {
+                    if (safeThis == nullptr)
+                        return;
+
+                    safeThis->currentModulation = value;
+
+                    safeThis->modulationSlider.setValue(
                         value,
                         juce::dontSendNotification);
                 });
@@ -1416,9 +1606,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // PIANO VIRTUAL
-    // =========================================================
+    // =============================================================
 
     void handleNoteOn(
         juce::MidiKeyboardState*,
@@ -1450,9 +1640,9 @@ public:
     }
 
 
-    // =========================================================
+    // =============================================================
     // ÁUDIO
-    // =========================================================
+    // =============================================================
 
     void prepareToPlay(
         int samplesPerBlockExpected,
@@ -1493,7 +1683,7 @@ public:
                     bufferToFill.numSamples);
             }
 
-            // Volume principal aplicado à saída estéreo
+            // Volume principal aplicado à saída estéreo.
 
             const float gain = masterVolume.load();
 
@@ -1514,9 +1704,9 @@ public:
     void releaseResources() override {}
 
 
-    // =========================================================
+    // =============================================================
     // INTERFACE GRÁFICA
-    // =========================================================
+    // =============================================================
 
     void paint(juce::Graphics& g) override
     {
@@ -1763,9 +1953,9 @@ public:
 
 private:
 
-    // =========================================================
+    // =============================================================
     // MOTOR
-    // =========================================================
+    // =============================================================
 
     FluidSynthEngine engine;
 
@@ -1779,9 +1969,9 @@ private:
     std::atomic<float> masterVolume { 1.0f };
 
 
-    // =========================================================
+    // =============================================================
     // TECLADO
-    // =========================================================
+    // =============================================================
 
     juce::MidiKeyboardState keyboardState;
 
@@ -1791,18 +1981,18 @@ private:
     };
 
 
-    // =========================================================
+    // =============================================================
     // CONTROLES
-    // =========================================================
+    // =============================================================
 
     juce::Slider pitchBendSlider;
     juce::Slider modulationSlider;
     juce::Slider masterVolumeSlider;
 
 
-    // =========================================================
+    // =============================================================
     // BOTÕES
-    // =========================================================
+    // =============================================================
 
     juce::TextButton loadButton { "CARREGAR" };
     juce::TextButton addButton { "ADICIONAR SF2" };
@@ -1812,26 +2002,32 @@ private:
     std::array<PresetButton, NUM_PRESETS> presetButtons;
 
 
-    // =========================================================
+    // =============================================================
     // SELETORES
-    // =========================================================
+    // =============================================================
 
     juce::ComboBox soundFontSelector;
     juce::ComboBox midiInputSelector;
 
 
-    // =========================================================
+    // =============================================================
     // MIDI
-    // =========================================================
+    // =============================================================
 
     juce::Array<juce::MidiDeviceInfo> midiDevices;
 
     std::unique_ptr<juce::MidiInput> midiInput;
 
+    // Entrada serial do Arduino
 
-    // =========================================================
+    ArduinoSerialMidiInput arduinoSerial;
+
+    juce::StringArray serialPorts;
+
+
+    // =============================================================
     // ARQUIVOS
-    // =========================================================
+    // =============================================================
 
     std::unique_ptr<juce::FileChooser> fileChooser;
 
@@ -1851,9 +2047,9 @@ private:
     std::vector<juce::File> soundFontFiles;
 
 
-    // =========================================================
+    // =============================================================
     // TEXTOS
-    // =========================================================
+    // =============================================================
 
     juce::String selectedSoundFontName =
         "Nenhum SoundFont selecionado";
